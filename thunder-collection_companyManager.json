@@ -1,0 +1,226 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "companyManager",
+    "dateExported": "2024-03-01T06:38:28.685Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "89e98dda-ae4c-4ce6-9daa-d6938c441f23",
+            "name": "ADMIN",
+            "containerId": "",
+            "created": "2024-03-01T05:09:52.332Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "108e8c5a-e9f3-4d86-9498-c4b539db3843",
+            "name": "COMPANY",
+            "containerId": "89e98dda-ae4c-4ce6-9daa-d6938c441f23",
+            "created": "2024-03-01T05:10:06.724Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "c079f71d-7953-41fe-971b-dfeeac96cded",
+            "name": "USER",
+            "containerId": "89e98dda-ae4c-4ce6-9daa-d6938c441f23",
+            "created": "2024-03-01T05:10:13.948Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "60553d36-2c64-4a53-b489-3c43b9870b1c",
+            "colId": "989c1e87-ba71-49c5-af00-03d3679f0302",
+            "containerId": "108e8c5a-e9f3-4d86-9498-c4b539db3843",
+            "name": "SAVE_COMPANY",
+            "url": "/company/save",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-01T05:12:38.536Z",
+            "modified": "2024-03-01T06:37:33.346Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Facebook"
+                    },
+                    {
+                        "name": "impactLevel",
+                        "value": "High"
+                    },
+                    {
+                        "name": "yearsCareer",
+                        "value": "2001"
+                    },
+                    {
+                        "name": "categoryBusiness",
+                        "value": "Technology"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c7893c5f-e664-4901-aa2f-b8f654e74688",
+            "colId": "989c1e87-ba71-49c5-af00-03d3679f0302",
+            "containerId": "c079f71d-7953-41fe-971b-dfeeac96cded",
+            "name": "REGISTER_CLIENT",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-01T05:19:26.916Z",
+            "modified": "2024-03-01T05:20:55.611Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Victor"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Cancinos"
+                    },
+                    {
+                        "name": "username",
+                        "value": "vcancinos"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "vcancinos@example"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "bf4b02c4-40da-42ad-a39a-2990e408789e",
+            "colId": "989c1e87-ba71-49c5-af00-03d3679f0302",
+            "containerId": "108e8c5a-e9f3-4d86-9498-c4b539db3843",
+            "name": "GET_COMPANIE",
+            "url": "/company/get",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-01T05:29:27.415Z",
+            "modified": "2024-03-01T05:42:27.897Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6cde0cd3-d33e-4b85-b23c-499a12c8bd8e",
+            "colId": "989c1e87-ba71-49c5-af00-03d3679f0302",
+            "containerId": "108e8c5a-e9f3-4d86-9498-c4b539db3843",
+            "name": "UPDATE_COMPANY",
+            "url": "/company/update/65e166b14dc207ca8ea75892",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-01T05:42:42.537Z",
+            "modified": "2024-03-01T05:53:58.137Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "yearsCareer",
+                        "value": "2001"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "cf2464ab-e4e5-4c97-af20-f8a27e5cd3aa",
+            "colId": "989c1e87-ba71-49c5-af00-03d3679f0302",
+            "containerId": "108e8c5a-e9f3-4d86-9498-c4b539db3843",
+            "name": "ALL_FILTERS",
+            "url": "/company/allFilters",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-03-01T05:51:35.249Z",
+            "modified": "2024-03-01T06:09:17.157Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"minYears\": 2000,\r\n    \"maxYears\": 2010,\r\n    \"category\": \"Technology\",\r\n    \"order\": \"Z-A\"\r\n}\r\n\r\n\r\n\r\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3b40dc2f-a160-4792-bb09-526b60718207",
+            "colId": "989c1e87-ba71-49c5-af00-03d3679f0302",
+            "containerId": "108e8c5a-e9f3-4d86-9498-c4b539db3843",
+            "name": "FILTER_YEARS",
+            "url": "/company/filterByYears",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-03-01T06:14:24.180Z",
+            "modified": "2024-03-01T06:16:16.746Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"minYears\": 2000,\n    \"maxYears\": 2001\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c6c16a71-e81d-457d-a2f2-fd469a90ae86",
+            "colId": "989c1e87-ba71-49c5-af00-03d3679f0302",
+            "containerId": "108e8c5a-e9f3-4d86-9498-c4b539db3843",
+            "name": "FILTER_CATEGORIES",
+            "url": "/company/filterByCategory",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-01T06:14:36.999Z",
+            "modified": "2024-03-01T06:17:13.436Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"category\": \"Technology\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f3aea2e2-87d8-4ba8-9c93-c81bdd7e6cca",
+            "colId": "989c1e87-ba71-49c5-af00-03d3679f0302",
+            "containerId": "108e8c5a-e9f3-4d86-9498-c4b539db3843",
+            "name": "FILTER_ORDER_A-Z",
+            "url": "/company/filterByOrder",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-03-01T06:14:54.488Z",
+            "modified": "2024-03-01T06:18:04.273Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"order\": \"A-Z\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656"
+        }
+    }
+}
